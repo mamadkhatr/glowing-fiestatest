@@ -4,7 +4,7 @@ sudo apt install ffmpeg
 while :
 do
 ./yt-dlp https://twitch.tv/FeLORDO
-sleep 180
+sleep 120
 pkill yt-dlp
 done
 
