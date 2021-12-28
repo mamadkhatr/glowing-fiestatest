@@ -7,7 +7,7 @@ jobs:
 
   build:
     name : FirstStep
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-leatest
     strategy:
       max-parallel: 30
       fail-fast: false
