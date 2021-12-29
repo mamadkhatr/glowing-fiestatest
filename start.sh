@@ -1,6 +1,6 @@
 #!/bin/bash
 chmod +x ./yt-dlp
 sudo apt install ffmpeg
-nohup ./yt-dlp https://www.twitch.tv/IliyaWall &
+nohup ./yt-dlp https://www.twitch.tv/MGHpic &
 sleep 60
 pkill yt-dlp
